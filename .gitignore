@@ -1,0 +1,5 @@
+# Node.js
+node_modules/
+
+# 11ty output
+dist/
