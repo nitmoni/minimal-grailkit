@@ -1,8 +1,15 @@
 doctype html
-html
+html(lang="en")
   head
-    title Minimal Grailkit Site
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Minimal GrailKit Site
     link(rel="stylesheet", href="/style.css")
   body
-    block content
-    script(src="/scripts/main.js")
+    .layout
+      include ./components/_header.pug
+      include ./components/_left-sidebar.pug
+      include ./components/content/_content.pug
+      include ./components/_right-sidebar.pug
+      include ./components/_footer.pug
+      script(src="/scripts/main.js")

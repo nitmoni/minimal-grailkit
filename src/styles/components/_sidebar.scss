@@ -1,0 +1,14 @@
+@use '../base/variables' as v;
+
+.sidebar-left, .sidebar-right {
+  background-color: v.$sidebar-bg;
+  padding: 1rem;
+}
+
+.sidebar-left ul {
+  list-style: none;
+}
+
+.sidebar-left li {
+  margin-bottom: 0.5rem;
+}
